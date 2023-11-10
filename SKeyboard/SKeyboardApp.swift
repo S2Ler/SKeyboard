@@ -6,15 +6,13 @@
 //
 
 import SwiftUI
-import SwiftData
 
 @main
 struct SKeyboardApp: App {
-
     var body: some Scene {
         WindowGroup {
             ContentView()
+              .environment(storage)
         }
-        .modelContainer(for: Item.self)
     }
 }

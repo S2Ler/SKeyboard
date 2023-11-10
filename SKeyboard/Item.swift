@@ -6,13 +6,32 @@
 //
 
 import Foundation
-import SwiftData
+import HidApi
 
-@Model
-final class Item {
-    var timestamp: Date
-    
-    init(timestamp: Date) {
-        self.timestamp = timestamp
+struct Item: Codable, Identifiable, Hashable {
+  var vendorId: HidDevice.VendorId
+  var productId: HidDevice.ProductId
+  var serialNumber: String?
+
+  var id: String {
+    deviceLabel
+  }
+
+  init(
+    vendorId: HidDevice.VendorId,
+    productId: HidDevice.ProductId,
+    serialNumber: String?
+  ) {
+    self.vendorId = vendorId
+    self.productId = productId
+    self.serialNumber = serialNumber
+  }
+
+  var deviceLabel: String {
+    if let serialNumber {
+      "\(vendorId):\(productId):\(serialNumber)"
+    } else {
+      "\(vendorId):\(productId)"
     }
+  }
 }

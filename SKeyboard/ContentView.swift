@@ -6,53 +6,81 @@
 //
 
 import SwiftUI
-import SwiftData
 
 struct ContentView: View {
-    @Environment(\.modelContext) private var modelContext
-    @Query private var items: [Item]
+  @Environment(Storage.self) private var storage
 
-    var body: some View {
-        NavigationSplitView {
-            List {
-                ForEach(items) { item in
-                    NavigationLink {
-                        Text("Item at \(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))")
-                    } label: {
-                        Text(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))
-                    }
-                }
-                .onDelete(perform: deleteItems)
+  @State private var numberFormatter: NumberFormatter = {
+    var nf = NumberFormatter()
+    nf.numberStyle = .decimal
+    nf.allowsFloats = false
+    nf.usesGroupingSeparator = false
+    nf.maximumFractionDigits = 0
+    return nf
+  }()
+
+  // MARK: New Item
+  @State private var newItem: Item?
+  @State private var newItemSheet: Bool = false
+  @AppStorage("last_vendor_id") private var newItemVendorID: Int = 0
+  @AppStorage("last_product_id") private var newItemProductId: Int = 0
+  @State private var newItemSerialNumber: String = ""
+
+  var body: some View {
+    NavigationSplitView {
+      List {
+        ForEach(storage.items) { item in
+          NavigationLink {
+            DeviceView(item: item)
+          } label: {
+            Text(item.deviceLabel)
+          }
+          .contextMenu {
+            Button("Delete") {
+              deleteItem(item: item)
             }
-            .toolbar {
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
-                    }
-                }
-            }
-        } detail: {
-            Text("Select an item")
+          }
         }
+      }
+    } detail: {
+      Text("Select an item")
     }
-
-    private func addItem() {
-        withAnimation {
-            let newItem = Item(timestamp: Date())
-            modelContext.insert(newItem)
+    .sheet(isPresented: $newItemSheet) {
+      withAnimation {
+        let newItem = Item(
+          vendorId: .init(rawValue: UInt16(newItemVendorID)),
+          productId: .init(rawValue: UInt16(newItemProductId)),
+          serialNumber: newItemSerialNumber.isEmpty ? nil : newItemSerialNumber
+        )
+        storage.insert(newItem)
+      }
+    } content: {
+      Form {
+        TextField("Vendor ID", value: $newItemVendorID, formatter: numberFormatter)
+        TextField("Product ID", value: $newItemProductId, formatter: numberFormatter)
+        TextField("Serial Number", text: $newItemSerialNumber)
+        Button("Done") {
+          newItemSheet = false
         }
+      }
+      .frame(width: 200)
+      .padding()
     }
-
-    private func deleteItems(offsets: IndexSet) {
-        withAnimation {
-            for index in offsets {
-                modelContext.delete(items[index])
-            }
+    .toolbar {
+      ToolbarItem {
+        Button {
+          newItemSheet = true
+          newItem = nil
+        } label: {
+          Label("Add Item", systemImage: "plus")
         }
+      }
     }
-}
+  }
 
-#Preview {
-    ContentView()
-        .modelContainer(for: Item.self, inMemory: true)
+  private func deleteItem(item: Item) {
+    withAnimation {
+      storage.delete(item)
+    }
+  }
 }

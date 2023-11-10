@@ -7,14 +7,69 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE2A52CF2A998EE60078161F /* Gcd+await.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2A52CE2A998EE60078161F /* Gcd+await.swift */; };
+		AE2A52D12A999AD10078161F /* CConversions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2A52D02A999AD10078161F /* CConversions.swift */; };
+		AE2A52D32A99A06C0078161F /* HidApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2A52D22A99A06C0078161F /* HidApi.swift */; };
+		AE4655392AF899B200C2697B /* hidapi_darwin.h in Headers */ = {isa = PBXBuildFile; fileRef = AE4655382AF899B200C2697B /* hidapi_darwin.h */; };
+		AE46553B2AF8B06900C2697B /* DeviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE46553A2AF8B06900C2697B /* DeviceView.swift */; };
+		AE46553D2AF9ED5300C2697B /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE46553C2AF9ED5300C2697B /* Storage.swift */; };
+		AE46553F2AF9F1DD00C2697B /* Report.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE46553E2AF9F1DD00C2697B /* Report.swift */; };
+		AE4655422AF9F39500C2697B /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4655402AF9F39200C2697B /* Utils.swift */; };
+		AE4655442AFA08ED00C2697B /* HidApiExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4655432AFA08ED00C2697B /* HidApiExecutor.swift */; };
 		AE52A5F72A95004200334C77 /* SKeyboardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE52A5F62A95004200334C77 /* SKeyboardApp.swift */; };
 		AE52A5F92A95004200334C77 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE52A5F82A95004200334C77 /* ContentView.swift */; };
 		AE52A5FB2A95004200334C77 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE52A5FA2A95004200334C77 /* Item.swift */; };
 		AE52A5FD2A95004500334C77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE52A5FC2A95004500334C77 /* Assets.xcassets */; };
 		AE52A6002A95004500334C77 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE52A5FF2A95004500334C77 /* Preview Assets.xcassets */; };
+		AE52A6352A95B70E00334C77 /* HidApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE52A62F2A95B70E00334C77 /* HidApi.framework */; };
+		AE52A6362A95B70E00334C77 /* HidApi.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AE52A62F2A95B70E00334C77 /* HidApi.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AE52A6462A95BC1900334C77 /* HidDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE52A6452A95BC1900334C77 /* HidDevice.swift */; };
+		AE52A64E2A95C1E500334C77 /* hid.c in Sources */ = {isa = PBXBuildFile; fileRef = AE52A64D2A95C1E500334C77 /* hid.c */; };
+		AE52A6502A95C1F100334C77 /* hidapi.h in Headers */ = {isa = PBXBuildFile; fileRef = AE52A64F2A95C1F100334C77 /* hidapi.h */; };
+		AE9423152AFE351C00052CC6 /* UnfairLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9423142AFE351C00052CC6 /* UnfairLock.swift */; };
+		AE9423172AFE352400052CC6 /* Locked.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9423162AFE352400052CC6 /* Locked.swift */; };
+		AE9423192AFE961300052CC6 /* HidDevice+Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9423182AFE961300052CC6 /* HidDevice+Info.swift */; };
+		AE94231B2AFE970200052CC6 /* HidDevice+VendorId.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE94231A2AFE970200052CC6 /* HidDevice+VendorId.swift */; };
+		AE94231D2AFE971400052CC6 /* HidDevice+ProductId.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE94231C2AFE971400052CC6 /* HidDevice+ProductId.swift */; };
+		AE9423212AFE985300052CC6 /* HidDevice+Usage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE94231E2AFE985300052CC6 /* HidDevice+Usage.swift */; };
+		AE9423222AFE985300052CC6 /* HidDevice+BusType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE94231F2AFE985300052CC6 /* HidDevice+BusType.swift */; };
+		AE9423232AFE985300052CC6 /* HidDevice+UsagePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9423202AFE985300052CC6 /* HidDevice+UsagePage.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		AE52A6332A95B70E00334C77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE52A5EB2A95004200334C77 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE52A62E2A95B70E00334C77;
+			remoteInfo = HidApi;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AE52A63A2A95B70E00334C77 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AE52A6362A95B70E00334C77 /* HidApi.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		AE2A52CE2A998EE60078161F /* Gcd+await.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Gcd+await.swift"; sourceTree = "<group>"; };
+		AE2A52D02A999AD10078161F /* CConversions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CConversions.swift; sourceTree = "<group>"; };
+		AE2A52D22A99A06C0078161F /* HidApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HidApi.swift; sourceTree = "<group>"; };
+		AE4655382AF899B200C2697B /* hidapi_darwin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = hidapi_darwin.h; path = hidapi/mac/hidapi_darwin.h; sourceTree = SOURCE_ROOT; };
+		AE46553A2AF8B06900C2697B /* DeviceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceView.swift; sourceTree = "<group>"; };
+		AE46553C2AF9ED5300C2697B /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		AE46553E2AF9F1DD00C2697B /* Report.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Report.swift; sourceTree = "<group>"; };
+		AE4655402AF9F39200C2697B /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		AE4655432AFA08ED00C2697B /* HidApiExecutor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HidApiExecutor.swift; sourceTree = "<group>"; };
 		AE52A5F32A95004200334C77 /* SKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE52A5F62A95004200334C77 /* SKeyboardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKeyboardApp.swift; sourceTree = "<group>"; };
 		AE52A5F82A95004200334C77 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -22,10 +77,31 @@
 		AE52A5FC2A95004500334C77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE52A5FF2A95004500334C77 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AE52A6012A95004500334C77 /* SKeyboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SKeyboard.entitlements; sourceTree = "<group>"; };
+		AE52A62F2A95B70E00334C77 /* HidApi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HidApi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE52A6452A95BC1900334C77 /* HidDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HidDevice.swift; path = SHidApi/HidDevice/HidDevice.swift; sourceTree = SOURCE_ROOT; };
+		AE52A64D2A95C1E500334C77 /* hid.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = hid.c; path = hidapi/mac/hid.c; sourceTree = SOURCE_ROOT; };
+		AE52A64F2A95C1F100334C77 /* hidapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = hidapi.h; path = hidapi/hidapi/hidapi.h; sourceTree = SOURCE_ROOT; };
+		AE52A6512A95C29F00334C77 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = module.modulemap; path = hidapi/module.modulemap; sourceTree = SOURCE_ROOT; };
+		AE9423142AFE351C00052CC6 /* UnfairLock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnfairLock.swift; sourceTree = "<group>"; };
+		AE9423162AFE352400052CC6 /* Locked.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Locked.swift; sourceTree = "<group>"; };
+		AE9423182AFE961300052CC6 /* HidDevice+Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HidDevice+Info.swift"; sourceTree = "<group>"; };
+		AE94231A2AFE970200052CC6 /* HidDevice+VendorId.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HidDevice+VendorId.swift"; sourceTree = "<group>"; };
+		AE94231C2AFE971400052CC6 /* HidDevice+ProductId.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HidDevice+ProductId.swift"; sourceTree = "<group>"; };
+		AE94231E2AFE985300052CC6 /* HidDevice+Usage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HidDevice+Usage.swift"; sourceTree = "<group>"; };
+		AE94231F2AFE985300052CC6 /* HidDevice+BusType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HidDevice+BusType.swift"; sourceTree = "<group>"; };
+		AE9423202AFE985300052CC6 /* HidDevice+UsagePage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HidDevice+UsagePage.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		AE52A5F02A95004200334C77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE52A6352A95B70E00334C77 /* HidApi.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE52A62C2A95B70E00334C77 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,7 +115,9 @@
 			isa = PBXGroup;
 			children = (
 				AE52A5F52A95004200334C77 /* SKeyboard */,
+				AE52A6302A95B70E00334C77 /* HidApi */,
 				AE52A5F42A95004200334C77 /* Products */,
+				AE52A63B2A95B73700334C77 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -47,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				AE52A5F32A95004200334C77 /* SKeyboard.app */,
+				AE52A62F2A95B70E00334C77 /* HidApi.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,7 +135,10 @@
 			children = (
 				AE52A5F62A95004200334C77 /* SKeyboardApp.swift */,
 				AE52A5F82A95004200334C77 /* ContentView.swift */,
+				AE46553A2AF8B06900C2697B /* DeviceView.swift */,
 				AE52A5FA2A95004200334C77 /* Item.swift */,
+				AE46553C2AF9ED5300C2697B /* Storage.swift */,
+				AE46553E2AF9F1DD00C2697B /* Report.swift */,
 				AE52A5FC2A95004500334C77 /* Assets.xcassets */,
 				AE52A6012A95004500334C77 /* SKeyboard.entitlements */,
 				AE52A5FE2A95004500334C77 /* Preview Content */,
@@ -72,7 +154,68 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		AE52A6302A95B70E00334C77 /* HidApi */ = {
+			isa = PBXGroup;
+			children = (
+				AE52A64B2A95C1C000334C77 /* chidapi */,
+				AE9423242AFE990600052CC6 /* HidDevice */,
+				AE2A52D22A99A06C0078161F /* HidApi.swift */,
+				AE4655432AFA08ED00C2697B /* HidApiExecutor.swift */,
+				AE2A52CE2A998EE60078161F /* Gcd+await.swift */,
+				AE2A52D02A999AD10078161F /* CConversions.swift */,
+				AE4655402AF9F39200C2697B /* Utils.swift */,
+				AE9423142AFE351C00052CC6 /* UnfairLock.swift */,
+				AE9423162AFE352400052CC6 /* Locked.swift */,
+			);
+			name = HidApi;
+			path = SHidApi;
+			sourceTree = "<group>";
+		};
+		AE52A63B2A95B73700334C77 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AE52A64B2A95C1C000334C77 /* chidapi */ = {
+			isa = PBXGroup;
+			children = (
+				AE4655382AF899B200C2697B /* hidapi_darwin.h */,
+				AE52A6512A95C29F00334C77 /* module.modulemap */,
+				AE52A64F2A95C1F100334C77 /* hidapi.h */,
+				AE52A64D2A95C1E500334C77 /* hid.c */,
+			);
+			name = chidapi;
+			sourceTree = "<group>";
+		};
+		AE9423242AFE990600052CC6 /* HidDevice */ = {
+			isa = PBXGroup;
+			children = (
+				AE52A6452A95BC1900334C77 /* HidDevice.swift */,
+				AE9423182AFE961300052CC6 /* HidDevice+Info.swift */,
+				AE94231A2AFE970200052CC6 /* HidDevice+VendorId.swift */,
+				AE94231C2AFE971400052CC6 /* HidDevice+ProductId.swift */,
+				AE94231F2AFE985300052CC6 /* HidDevice+BusType.swift */,
+				AE94231E2AFE985300052CC6 /* HidDevice+Usage.swift */,
+				AE9423202AFE985300052CC6 /* HidDevice+UsagePage.swift */,
+			);
+			path = HidDevice;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		AE52A62A2A95B70E00334C77 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE4655392AF899B200C2697B /* hidapi_darwin.h in Headers */,
+				AE52A6502A95C1F100334C77 /* hidapi.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		AE52A5F22A95004200334C77 /* SKeyboard */ = {
@@ -82,15 +225,35 @@
 				AE52A5EF2A95004200334C77 /* Sources */,
 				AE52A5F02A95004200334C77 /* Frameworks */,
 				AE52A5F12A95004200334C77 /* Resources */,
+				AE52A63A2A95B70E00334C77 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				AE52A6342A95B70E00334C77 /* PBXTargetDependency */,
 			);
 			name = SKeyboard;
 			productName = SKeyboard;
 			productReference = AE52A5F32A95004200334C77 /* SKeyboard.app */;
 			productType = "com.apple.product-type.application";
+		};
+		AE52A62E2A95B70E00334C77 /* HidApi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE52A6372A95B70E00334C77 /* Build configuration list for PBXNativeTarget "HidApi" */;
+			buildPhases = (
+				AE52A62A2A95B70E00334C77 /* Headers */,
+				AE52A62B2A95B70E00334C77 /* Sources */,
+				AE52A62C2A95B70E00334C77 /* Frameworks */,
+				AE52A62D2A95B70E00334C77 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HidApi;
+			productName = HidApi;
+			productReference = AE52A62F2A95B70E00334C77 /* HidApi.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -100,10 +263,14 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1500;
-				LastUpgradeCheck = 1500;
+				LastUpgradeCheck = 1510;
 				TargetAttributes = {
 					AE52A5F22A95004200334C77 = {
 						CreatedOnToolsVersion = 15.0;
+					};
+					AE52A62E2A95B70E00334C77 = {
+						CreatedOnToolsVersion = 15.0;
+						LastSwiftMigration = 1500;
 					};
 				};
 			};
@@ -121,6 +288,7 @@
 			projectRoot = "";
 			targets = (
 				AE52A5F22A95004200334C77 /* SKeyboard */,
+				AE52A62E2A95B70E00334C77 /* HidApi */,
 			);
 		};
 /* End PBXProject section */
@@ -135,6 +303,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AE52A62D2A95B70E00334C77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -144,11 +319,44 @@
 			files = (
 				AE52A5F92A95004200334C77 /* ContentView.swift in Sources */,
 				AE52A5FB2A95004200334C77 /* Item.swift in Sources */,
+				AE46553B2AF8B06900C2697B /* DeviceView.swift in Sources */,
 				AE52A5F72A95004200334C77 /* SKeyboardApp.swift in Sources */,
+				AE46553D2AF9ED5300C2697B /* Storage.swift in Sources */,
+				AE46553F2AF9F1DD00C2697B /* Report.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE52A62B2A95B70E00334C77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE52A6462A95BC1900334C77 /* HidDevice.swift in Sources */,
+				AE9423152AFE351C00052CC6 /* UnfairLock.swift in Sources */,
+				AE9423172AFE352400052CC6 /* Locked.swift in Sources */,
+				AE2A52D12A999AD10078161F /* CConversions.swift in Sources */,
+				AE94231B2AFE970200052CC6 /* HidDevice+VendorId.swift in Sources */,
+				AE2A52CF2A998EE60078161F /* Gcd+await.swift in Sources */,
+				AE94231D2AFE971400052CC6 /* HidDevice+ProductId.swift in Sources */,
+				AE2A52D32A99A06C0078161F /* HidApi.swift in Sources */,
+				AE9423222AFE985300052CC6 /* HidDevice+BusType.swift in Sources */,
+				AE4655442AFA08ED00C2697B /* HidApiExecutor.swift in Sources */,
+				AE9423192AFE961300052CC6 /* HidDevice+Info.swift in Sources */,
+				AE9423212AFE985300052CC6 /* HidDevice+Usage.swift in Sources */,
+				AE52A64E2A95C1E500334C77 /* hid.c in Sources */,
+				AE4655422AF9F39500C2697B /* Utils.swift in Sources */,
+				AE9423232AFE985300052CC6 /* HidDevice+UsagePage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AE52A6342A95B70E00334C77 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE52A62E2A95B70E00334C77 /* HidApi */;
+			targetProxy = AE52A6332A95B70E00334C77 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		AE52A6022A95004500334C77 /* Debug */ = {
@@ -185,6 +393,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -248,6 +457,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -272,12 +482,14 @@
 		AE52A6052A95004500334C77 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = SKeyboard/SKeyboard.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"SKeyboard/Preview Content\"";
 				DEVELOPMENT_TEAM = Q67427GU6K;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -290,6 +502,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
+				MODULEMAP_FILE = "\"$(SRCROOT)/hidapi/module.modulemap";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bialiauski.SKeyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -300,12 +513,14 @@
 		AE52A6062A95004500334C77 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = SKeyboard/SKeyboard.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"SKeyboard/Preview Content\"";
 				DEVELOPMENT_TEAM = Q67427GU6K;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -318,10 +533,92 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
+				MODULEMAP_FILE = "\"$(SRCROOT)/hidapi/module.modulemap";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bialiauski.SKeyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		AE52A6382A95B70E00334C77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = Q67427GU6K;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/hidapi/hidapi\"";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bialiauski.HidApi;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/hidapi/\"";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AE52A6392A95B70E00334C77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = Q67427GU6K;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/hidapi/hidapi\"";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bialiauski.HidApi;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/hidapi/\"";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -342,6 +639,15 @@
 			buildConfigurations = (
 				AE52A6052A95004500334C77 /* Debug */,
 				AE52A6062A95004500334C77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE52A6372A95B70E00334C77 /* Build configuration list for PBXNativeTarget "HidApi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE52A6382A95B70E00334C77 /* Debug */,
+				AE52A6392A95B70E00334C77 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
