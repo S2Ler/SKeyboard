@@ -11,6 +11,8 @@ import HidApi
 struct Item: Codable, Identifiable, Hashable {
   var vendorId: HidDevice.VendorId
   var productId: HidDevice.ProductId
+  var usagePage: HidDevice.UsagePage?
+  var usage: HidDevice.Usage?
   var serialNumber: String?
 
   var id: String {
@@ -20,11 +22,15 @@ struct Item: Codable, Identifiable, Hashable {
   init(
     vendorId: HidDevice.VendorId,
     productId: HidDevice.ProductId,
-    serialNumber: String?
+    serialNumber: String?,
+    usagePage: HidDevice.UsagePage?,
+    usage: HidDevice.Usage?
   ) {
     self.vendorId = vendorId
     self.productId = productId
     self.serialNumber = serialNumber
+    self.usagePage = usagePage
+    self.usage = usage
   }
 
   var deviceLabel: String {

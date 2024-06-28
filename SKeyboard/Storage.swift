@@ -7,9 +7,11 @@
 
 import Foundation
 
+@MainActor
 let storage = Storage()
 
 @Observable
+@MainActor
 final class Storage {
   private(set) var items: [Item] = [] {
     didSet {

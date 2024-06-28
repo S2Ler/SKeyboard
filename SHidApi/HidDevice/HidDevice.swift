@@ -26,13 +26,23 @@ public enum HidApiError: LocalizedError {
 }
 
 public final class HidDevice: Sendable {
-  private let handler: OpaquePointer
+  private final class Handler: @unchecked Sendable {
+    private let handler: OpaquePointer
+    init(_ handler: consuming OpaquePointer) {
+      self.handler = handler
+    }
+
+    func callAsFunction() -> OpaquePointer {
+      handler
+    }
+  }
+  private let handler: Handler
   private let log: OSLog
 
   init(
     handler: consuming OpaquePointer
   ) {
-    self.handler = handler
+    self.handler = .init(handler)
     self.log = OSLog(subsystem: "com.bialiauski.HidApi", category: "Device")
   }
 
@@ -40,7 +50,7 @@ public final class HidDevice: Sendable {
     os_log(.debug, log: log, "Closing device")
     Task.detached { [handler, log] in
       try await hidApiExecutor.execute { [handler, log] in
-        hid_close(handler)
+        hid_close(handler())
         os_log(.info, log: log, "Closed device")
       }
     }
@@ -51,7 +61,7 @@ public final class HidDevice: Sendable {
     try await hidApiExecutor.execute { [handler, log] in
       try data.withUnsafeBytes { (rawBuffer: UnsafeRawBufferPointer) in
         try rawBuffer.withMemoryRebound(to: UInt8.self) { buffer in
-          let result = hid_write(handler, buffer.baseAddress, rawBuffer.count)
+          let result = hid_write(handler(), buffer.baseAddress, rawBuffer.count)
           if result == -1 {
             os_log(.error, log: log, "Failed to write to device: report: \(data.toHexString()), error=\(String.hidApiErrorMessage)")
             throw HidApiError.writeToDeviceFailed(message: .hidApiErrorMessage)
@@ -70,7 +80,7 @@ public final class HidDevice: Sendable {
       var dataBuffer = Array<UInt8>(repeating: 0, count: 32)
       let bytesread = dataBuffer.withUnsafeMutableBufferPointer { buf in
         let hidTimeout = Int32(timeout * 1000)
-        return Int(hid_read_timeout(handler, buf.baseAddress!, 32, hidTimeout))
+        return Int(hid_read_timeout(handler(), buf.baseAddress!, 32, hidTimeout))
       }
       if bytesread == -1 {
         let error = String.hidApiErrorMessage

@@ -24,14 +24,21 @@ struct ContentView: View {
   @State private var newItemSheet: Bool = false
   @AppStorage("last_vendor_id") private var newItemVendorID: Int = 0
   @AppStorage("last_product_id") private var newItemProductId: Int = 0
-  @State private var newItemSerialNumber: String = ""
+  @AppStorage("last_serial_number") private var newItemSerialNumber: String = ""
+  @AppStorage("last_usage_page") private var newItemUsagePage: Int = 0
+  @AppStorage("last_usage") private var newItemUsage: Int = 0
+
 
   var body: some View {
     NavigationSplitView {
       List {
         ForEach(storage.items) { item in
           NavigationLink {
-            DeviceView(item: item)
+            if item.usage != nil,  item.usagePage != nil {
+              DeviceWithUsageView(item: item)
+            } else {
+              DeviceView(item: item)
+            }
           } label: {
             Text(item.deviceLabel)
           }
@@ -50,7 +57,10 @@ struct ContentView: View {
         let newItem = Item(
           vendorId: .init(rawValue: UInt16(newItemVendorID)),
           productId: .init(rawValue: UInt16(newItemProductId)),
-          serialNumber: newItemSerialNumber.isEmpty ? nil : newItemSerialNumber
+          serialNumber: newItemSerialNumber.isEmpty ? nil : newItemSerialNumber,
+          usagePage: newItemUsagePage != 0 ? .init(rawValue: UInt16(newItemUsagePage)) : nil,
+          usage: newItemUsage != 0 ? .init(rawValue: UInt16(newItemUsage)) : nil
+
         )
         storage.insert(newItem)
       }
@@ -59,6 +69,8 @@ struct ContentView: View {
         TextField("Vendor ID", value: $newItemVendorID, formatter: numberFormatter)
         TextField("Product ID", value: $newItemProductId, formatter: numberFormatter)
         TextField("Serial Number", text: $newItemSerialNumber)
+        TextField("Usage Page", value: $newItemUsagePage, formatter: numberFormatter)
+        TextField("Usage", value: $newItemUsage, formatter: numberFormatter)
         Button("Done") {
           newItemSheet = false
         }

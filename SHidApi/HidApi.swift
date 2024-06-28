@@ -75,7 +75,9 @@ public actor HidApi {
 
   public func queryDevices(
     vendorId: HidDevice.VendorId,
-    productId: HidDevice.ProductId
+    productId: HidDevice.ProductId,
+    usagePage: HidDevice.UsagePage? = nil,
+    usage: HidDevice.Usage? = nil
   ) async throws -> [HidDevice.Info] {
     let deviceInfos: UnfairLocked<[HidDevice.Info]> = .init([], lock: .init())
 
@@ -87,16 +89,24 @@ public actor HidApi {
         throw HidApiError.enumerationFailed(message: .hidApiErrorMessage)
       }
 
-      deviceInfos.mutate {
-        $0.append(.init(hidDeviceInfos.pointee))
+      func addDeviceInfo(_ deviceInfo: HidDevice.Info) {
+        if let usagePage, deviceInfo.usagePage != usagePage {
+          return
+        }
+        if let usage, deviceInfo.usage != usage {
+          return
+        }
+        deviceInfos.mutate {
+          $0.append(deviceInfo)
+        }
       }
+
+      addDeviceInfo(.init(hidDeviceInfos.pointee))
 
       // Iterate over hidDeviceInfos to get all device infos
       var currentHidDeviceInfo = hidDeviceInfos.pointee.next
       while let hidDeviceInfo = currentHidDeviceInfo {
-        deviceInfos.mutate {
-          $0.append(.init(hidDeviceInfo.pointee))
-        }
+        addDeviceInfo(.init(hidDeviceInfo.pointee))
         currentHidDeviceInfo = hidDeviceInfo.pointee.next
       }
 

@@ -10,6 +10,19 @@
 		AE2A52CF2A998EE60078161F /* Gcd+await.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2A52CE2A998EE60078161F /* Gcd+await.swift */; };
 		AE2A52D12A999AD10078161F /* CConversions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2A52D02A999AD10078161F /* CConversions.swift */; };
 		AE2A52D32A99A06C0078161F /* HidApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2A52D22A99A06C0078161F /* HidApi.swift */; };
+		AE2C51A52B1B4D400088EA4C /* LayerMapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2C51A42B1B4D400088EA4C /* LayerMapping.swift */; };
+		AE2C51A72B1B4D7B0088EA4C /* LanguageMapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2C51A62B1B4D7B0088EA4C /* LanguageMapping.swift */; };
+		AE2C51A92B1B4E760088EA4C /* AppBundleId.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2C51A82B1B4E760088EA4C /* AppBundleId.swift */; };
+		AE2C51AB2B1B4E9E0088EA4C /* LayerIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2C51AA2B1B4E9E0088EA4C /* LayerIndex.swift */; };
+		AE2C51AD2B1B50BC0088EA4C /* KeyboardInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2C51AC2B1B50BC0088EA4C /* KeyboardInfo.swift */; };
+		AE3545A92AFF1D8C003BBFAC /* InputSourceEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3545A82AFF1D8C003BBFAC /* InputSourceEvents.swift */; };
+		AE3545B12AFF2493003BBFAC /* MacropadApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3545B02AFF2493003BBFAC /* MacropadApp.swift */; };
+		AE3545B32AFF2493003BBFAC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3545B22AFF2493003BBFAC /* ContentView.swift */; };
+		AE3545B72AFF2495003BBFAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE3545B62AFF2495003BBFAC /* Assets.xcassets */; };
+		AE3545BA2AFF2495003BBFAC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE3545B92AFF2495003BBFAC /* Preview Assets.xcassets */; };
+		AE3545BF2AFF24A7003BBFAC /* HidApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE52A62F2A95B70E00334C77 /* HidApi.framework */; };
+		AE3545C02AFF24A7003BBFAC /* HidApi.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AE52A62F2A95B70E00334C77 /* HidApi.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AE3545C52AFF2F52003BBFAC /* LayersMappingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3545C42AFF2F52003BBFAC /* LayersMappingView.swift */; };
 		AE4655392AF899B200C2697B /* hidapi_darwin.h in Headers */ = {isa = PBXBuildFile; fileRef = AE4655382AF899B200C2697B /* hidapi_darwin.h */; };
 		AE46553B2AF8B06900C2697B /* DeviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE46553A2AF8B06900C2697B /* DeviceView.swift */; };
 		AE46553D2AF9ED5300C2697B /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE46553C2AF9ED5300C2697B /* Storage.swift */; };
@@ -26,6 +39,16 @@
 		AE52A6462A95BC1900334C77 /* HidDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE52A6452A95BC1900334C77 /* HidDevice.swift */; };
 		AE52A64E2A95C1E500334C77 /* hid.c in Sources */ = {isa = PBXBuildFile; fileRef = AE52A64D2A95C1E500334C77 /* hid.c */; };
 		AE52A6502A95C1F100334C77 /* hidapi.h in Headers */ = {isa = PBXBuildFile; fileRef = AE52A64F2A95C1F100334C77 /* hidapi.h */; };
+		AE5E4D272B11BE00000CC2A4 /* HidApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE52A62F2A95B70E00334C77 /* HidApi.framework */; };
+		AE5E4D2F2B11C3CC000CC2A4 /* DeviceWithUsageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5E4D2E2B11C3CC000CC2A4 /* DeviceWithUsageView.swift */; };
+		AE5EBE262B43C0E700319565 /* FileStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5EBE252B43C0E700319565 /* FileStorage.swift */; };
+		AE5EBE282B43DC7900319565 /* Deps.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5EBE272B43DC7900319565 /* Deps.swift */; };
+		AE5EBE2A2B43DCE800319565 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5EBE292B43DCE800319565 /* State.swift */; };
+		AE7128D62B1AD75A000D570B /* LanguageMappingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7128D52B1AD75A000D570B /* LanguageMappingView.swift */; };
+		AE7128D92B1ADA56000D570B /* KeyboardKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE5E4D202B11BD92000CC2A4 /* KeyboardKit.framework */; };
+		AE7128DA2B1ADA56000D570B /* KeyboardKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AE5E4D202B11BD92000CC2A4 /* KeyboardKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AE7128DE2B1ADFCE000D570B /* InputSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7128DD2B1ADFCE000D570B /* InputSource.swift */; };
+		AE7128E22B1B0087000D570B /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7128E12B1B0087000D570B /* Keyboard.swift */; };
 		AE9423152AFE351C00052CC6 /* UnfairLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9423142AFE351C00052CC6 /* UnfairLock.swift */; };
 		AE9423172AFE352400052CC6 /* Locked.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9423162AFE352400052CC6 /* Locked.swift */; };
 		AE9423192AFE961300052CC6 /* HidDevice+Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9423182AFE961300052CC6 /* HidDevice+Info.swift */; };
@@ -37,6 +60,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		AE3545C12AFF24A7003BBFAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE52A5EB2A95004200334C77 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE52A62E2A95B70E00334C77;
+			remoteInfo = HidApi;
+		};
 		AE52A6332A95B70E00334C77 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = AE52A5EB2A95004200334C77 /* Project object */;
@@ -44,9 +74,35 @@
 			remoteGlobalIDString = AE52A62E2A95B70E00334C77;
 			remoteInfo = HidApi;
 		};
+		AE5E4D292B11BE00000CC2A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE52A5EB2A95004200334C77 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE52A62E2A95B70E00334C77;
+			remoteInfo = HidApi;
+		};
+		AE7128DB2B1ADA56000D570B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE52A5EB2A95004200334C77 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE5E4D1F2B11BD92000CC2A4;
+			remoteInfo = KeyboardKit;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		AE3545C32AFF24A7003BBFAC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AE7128DA2B1ADA56000D570B /* KeyboardKit.framework in Embed Frameworks */,
+				AE3545C02AFF24A7003BBFAC /* HidApi.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AE52A63A2A95B70E00334C77 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -64,6 +120,19 @@
 		AE2A52CE2A998EE60078161F /* Gcd+await.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Gcd+await.swift"; sourceTree = "<group>"; };
 		AE2A52D02A999AD10078161F /* CConversions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CConversions.swift; sourceTree = "<group>"; };
 		AE2A52D22A99A06C0078161F /* HidApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HidApi.swift; sourceTree = "<group>"; };
+		AE2C51A42B1B4D400088EA4C /* LayerMapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayerMapping.swift; sourceTree = "<group>"; };
+		AE2C51A62B1B4D7B0088EA4C /* LanguageMapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageMapping.swift; sourceTree = "<group>"; };
+		AE2C51A82B1B4E760088EA4C /* AppBundleId.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBundleId.swift; sourceTree = "<group>"; };
+		AE2C51AA2B1B4E9E0088EA4C /* LayerIndex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayerIndex.swift; sourceTree = "<group>"; };
+		AE2C51AC2B1B50BC0088EA4C /* KeyboardInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardInfo.swift; sourceTree = "<group>"; };
+		AE3545A82AFF1D8C003BBFAC /* InputSourceEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputSourceEvents.swift; sourceTree = "<group>"; };
+		AE3545AE2AFF2493003BBFAC /* Macropad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Macropad.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE3545B02AFF2493003BBFAC /* MacropadApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacropadApp.swift; sourceTree = "<group>"; };
+		AE3545B22AFF2493003BBFAC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AE3545B62AFF2495003BBFAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AE3545B92AFF2495003BBFAC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AE3545BB2AFF2495003BBFAC /* Macropad.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Macropad.entitlements; sourceTree = "<group>"; };
+		AE3545C42AFF2F52003BBFAC /* LayersMappingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayersMappingView.swift; sourceTree = "<group>"; };
 		AE4655382AF899B200C2697B /* hidapi_darwin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = hidapi_darwin.h; path = hidapi/mac/hidapi_darwin.h; sourceTree = SOURCE_ROOT; };
 		AE46553A2AF8B06900C2697B /* DeviceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceView.swift; sourceTree = "<group>"; };
 		AE46553C2AF9ED5300C2697B /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
@@ -82,6 +151,15 @@
 		AE52A64D2A95C1E500334C77 /* hid.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = hid.c; path = hidapi/mac/hid.c; sourceTree = SOURCE_ROOT; };
 		AE52A64F2A95C1F100334C77 /* hidapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = hidapi.h; path = hidapi/hidapi/hidapi.h; sourceTree = SOURCE_ROOT; };
 		AE52A6512A95C29F00334C77 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = module.modulemap; path = hidapi/module.modulemap; sourceTree = SOURCE_ROOT; };
+		AE5E4D202B11BD92000CC2A4 /* KeyboardKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KeyboardKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE5E4D2E2B11C3CC000CC2A4 /* DeviceWithUsageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceWithUsageView.swift; sourceTree = "<group>"; };
+		AE5EBE252B43C0E700319565 /* FileStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileStorage.swift; sourceTree = "<group>"; };
+		AE5EBE272B43DC7900319565 /* Deps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deps.swift; sourceTree = "<group>"; };
+		AE5EBE292B43DCE800319565 /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		AE7128D52B1AD75A000D570B /* LanguageMappingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageMappingView.swift; sourceTree = "<group>"; };
+		AE7128DD2B1ADFCE000D570B /* InputSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputSource.swift; sourceTree = "<group>"; };
+		AE7128DF2B1AE43D000D570B /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		AE7128E12B1B0087000D570B /* Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keyboard.swift; sourceTree = "<group>"; };
 		AE9423142AFE351C00052CC6 /* UnfairLock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnfairLock.swift; sourceTree = "<group>"; };
 		AE9423162AFE352400052CC6 /* Locked.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Locked.swift; sourceTree = "<group>"; };
 		AE9423182AFE961300052CC6 /* HidDevice+Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HidDevice+Info.swift"; sourceTree = "<group>"; };
@@ -93,6 +171,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		AE3545AB2AFF2493003BBFAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE7128D92B1ADA56000D570B /* KeyboardKit.framework in Frameworks */,
+				AE3545BF2AFF24A7003BBFAC /* HidApi.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AE52A5F02A95004200334C77 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -108,14 +195,48 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AE5E4D1D2B11BD92000CC2A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE5E4D272B11BE00000CC2A4 /* HidApi.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AE3545AF2AFF2493003BBFAC /* Macropad */ = {
+			isa = PBXGroup;
+			children = (
+				AE3545B02AFF2493003BBFAC /* MacropadApp.swift */,
+				AE3545B22AFF2493003BBFAC /* ContentView.swift */,
+				AE3545C42AFF2F52003BBFAC /* LayersMappingView.swift */,
+				AE7128D52B1AD75A000D570B /* LanguageMappingView.swift */,
+				AE5EBE272B43DC7900319565 /* Deps.swift */,
+				AE5EBE292B43DCE800319565 /* State.swift */,
+				AE3545B62AFF2495003BBFAC /* Assets.xcassets */,
+				AE3545BB2AFF2495003BBFAC /* Macropad.entitlements */,
+				AE3545B82AFF2495003BBFAC /* Preview Content */,
+			);
+			path = Macropad;
+			sourceTree = "<group>";
+		};
+		AE3545B82AFF2495003BBFAC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AE3545B92AFF2495003BBFAC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 		AE52A5EA2A95004200334C77 = {
 			isa = PBXGroup;
 			children = (
+				AE3545AF2AFF2493003BBFAC /* Macropad */,
 				AE52A5F52A95004200334C77 /* SKeyboard */,
 				AE52A6302A95B70E00334C77 /* HidApi */,
+				AE5E4D212B11BD92000CC2A4 /* KeyboardKit */,
 				AE52A5F42A95004200334C77 /* Products */,
 				AE52A63B2A95B73700334C77 /* Frameworks */,
 			);
@@ -126,6 +247,8 @@
 			children = (
 				AE52A5F32A95004200334C77 /* SKeyboard.app */,
 				AE52A62F2A95B70E00334C77 /* HidApi.framework */,
+				AE3545AE2AFF2493003BBFAC /* Macropad.app */,
+				AE5E4D202B11BD92000CC2A4 /* KeyboardKit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -136,8 +259,10 @@
 				AE52A5F62A95004200334C77 /* SKeyboardApp.swift */,
 				AE52A5F82A95004200334C77 /* ContentView.swift */,
 				AE46553A2AF8B06900C2697B /* DeviceView.swift */,
+				AE5E4D2E2B11C3CC000CC2A4 /* DeviceWithUsageView.swift */,
 				AE52A5FA2A95004200334C77 /* Item.swift */,
 				AE46553C2AF9ED5300C2697B /* Storage.swift */,
+				AE3545A82AFF1D8C003BBFAC /* InputSourceEvents.swift */,
 				AE46553E2AF9F1DD00C2697B /* Report.swift */,
 				AE52A5FC2A95004500334C77 /* Assets.xcassets */,
 				AE52A6012A95004500334C77 /* SKeyboard.entitlements */,
@@ -174,6 +299,7 @@
 		AE52A63B2A95B73700334C77 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AE7128DF2B1AE43D000D570B /* AppKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -187,6 +313,21 @@
 				AE52A64D2A95C1E500334C77 /* hid.c */,
 			);
 			name = chidapi;
+			sourceTree = "<group>";
+		};
+		AE5E4D212B11BD92000CC2A4 /* KeyboardKit */ = {
+			isa = PBXGroup;
+			children = (
+				AE7128DD2B1ADFCE000D570B /* InputSource.swift */,
+				AE7128E12B1B0087000D570B /* Keyboard.swift */,
+				AE2C51AC2B1B50BC0088EA4C /* KeyboardInfo.swift */,
+				AE2C51A42B1B4D400088EA4C /* LayerMapping.swift */,
+				AE2C51A62B1B4D7B0088EA4C /* LanguageMapping.swift */,
+				AE2C51A82B1B4E760088EA4C /* AppBundleId.swift */,
+				AE2C51AA2B1B4E9E0088EA4C /* LayerIndex.swift */,
+				AE5EBE252B43C0E700319565 /* FileStorage.swift */,
+			);
+			path = KeyboardKit;
 			sourceTree = "<group>";
 		};
 		AE9423242AFE990600052CC6 /* HidDevice */ = {
@@ -215,9 +356,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AE5E4D1B2B11BD92000CC2A4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		AE3545AD2AFF2493003BBFAC /* Macropad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE3545BC2AFF2495003BBFAC /* Build configuration list for PBXNativeTarget "Macropad" */;
+			buildPhases = (
+				AE3545AA2AFF2493003BBFAC /* Sources */,
+				AE3545AB2AFF2493003BBFAC /* Frameworks */,
+				AE3545AC2AFF2493003BBFAC /* Resources */,
+				AE3545C32AFF24A7003BBFAC /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE3545C22AFF24A7003BBFAC /* PBXTargetDependency */,
+				AE7128DC2B1ADA56000D570B /* PBXTargetDependency */,
+			);
+			name = Macropad;
+			productName = Macropad;
+			productReference = AE3545AE2AFF2493003BBFAC /* Macropad.app */;
+			productType = "com.apple.product-type.application";
+		};
 		AE52A5F22A95004200334C77 /* SKeyboard */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = AE52A6042A95004500334C77 /* Build configuration list for PBXNativeTarget "SKeyboard" */;
@@ -255,6 +423,25 @@
 			productReference = AE52A62F2A95B70E00334C77 /* HidApi.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		AE5E4D1F2B11BD92000CC2A4 /* KeyboardKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE5E4D262B11BD92000CC2A4 /* Build configuration list for PBXNativeTarget "KeyboardKit" */;
+			buildPhases = (
+				AE5E4D1B2B11BD92000CC2A4 /* Headers */,
+				AE5E4D1C2B11BD92000CC2A4 /* Sources */,
+				AE5E4D1D2B11BD92000CC2A4 /* Frameworks */,
+				AE5E4D1E2B11BD92000CC2A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE5E4D2A2B11BE00000CC2A4 /* PBXTargetDependency */,
+			);
+			name = KeyboardKit;
+			productName = KeyboardKit;
+			productReference = AE5E4D202B11BD92000CC2A4 /* KeyboardKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -262,15 +449,22 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1500;
-				LastUpgradeCheck = 1510;
+				LastSwiftUpdateCheck = 1510;
+				LastUpgradeCheck = 1600;
 				TargetAttributes = {
+					AE3545AD2AFF2493003BBFAC = {
+						CreatedOnToolsVersion = 15.1;
+					};
 					AE52A5F22A95004200334C77 = {
 						CreatedOnToolsVersion = 15.0;
 					};
 					AE52A62E2A95B70E00334C77 = {
 						CreatedOnToolsVersion = 15.0;
 						LastSwiftMigration = 1500;
+					};
+					AE5E4D1F2B11BD92000CC2A4 = {
+						CreatedOnToolsVersion = 15.1;
+						LastSwiftMigration = 1510;
 					};
 				};
 			};
@@ -289,11 +483,22 @@
 			targets = (
 				AE52A5F22A95004200334C77 /* SKeyboard */,
 				AE52A62E2A95B70E00334C77 /* HidApi */,
+				AE3545AD2AFF2493003BBFAC /* Macropad */,
+				AE5E4D1F2B11BD92000CC2A4 /* KeyboardKit */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		AE3545AC2AFF2493003BBFAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE3545BA2AFF2495003BBFAC /* Preview Assets.xcassets in Resources */,
+				AE3545B72AFF2495003BBFAC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AE52A5F12A95004200334C77 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -310,16 +515,38 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AE5E4D1E2B11BD92000CC2A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		AE3545AA2AFF2493003BBFAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE3545B32AFF2493003BBFAC /* ContentView.swift in Sources */,
+				AE5EBE282B43DC7900319565 /* Deps.swift in Sources */,
+				AE3545C52AFF2F52003BBFAC /* LayersMappingView.swift in Sources */,
+				AE3545B12AFF2493003BBFAC /* MacropadApp.swift in Sources */,
+				AE7128D62B1AD75A000D570B /* LanguageMappingView.swift in Sources */,
+				AE5EBE2A2B43DCE800319565 /* State.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AE52A5EF2A95004200334C77 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				AE52A5F92A95004200334C77 /* ContentView.swift in Sources */,
 				AE52A5FB2A95004200334C77 /* Item.swift in Sources */,
+				AE5E4D2F2B11C3CC000CC2A4 /* DeviceWithUsageView.swift in Sources */,
 				AE46553B2AF8B06900C2697B /* DeviceView.swift in Sources */,
+				AE3545A92AFF1D8C003BBFAC /* InputSourceEvents.swift in Sources */,
 				AE52A5F72A95004200334C77 /* SKeyboardApp.swift in Sources */,
 				AE46553D2AF9ED5300C2697B /* Storage.swift in Sources */,
 				AE46553F2AF9F1DD00C2697B /* Report.swift in Sources */,
@@ -348,17 +575,101 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AE5E4D1C2B11BD92000CC2A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE2C51AB2B1B4E9E0088EA4C /* LayerIndex.swift in Sources */,
+				AE2C51AD2B1B50BC0088EA4C /* KeyboardInfo.swift in Sources */,
+				AE2C51A52B1B4D400088EA4C /* LayerMapping.swift in Sources */,
+				AE5EBE262B43C0E700319565 /* FileStorage.swift in Sources */,
+				AE2C51A92B1B4E760088EA4C /* AppBundleId.swift in Sources */,
+				AE7128DE2B1ADFCE000D570B /* InputSource.swift in Sources */,
+				AE7128E22B1B0087000D570B /* Keyboard.swift in Sources */,
+				AE2C51A72B1B4D7B0088EA4C /* LanguageMapping.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		AE3545C22AFF24A7003BBFAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE52A62E2A95B70E00334C77 /* HidApi */;
+			targetProxy = AE3545C12AFF24A7003BBFAC /* PBXContainerItemProxy */;
+		};
 		AE52A6342A95B70E00334C77 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = AE52A62E2A95B70E00334C77 /* HidApi */;
 			targetProxy = AE52A6332A95B70E00334C77 /* PBXContainerItemProxy */;
 		};
+		AE5E4D2A2B11BE00000CC2A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE52A62E2A95B70E00334C77 /* HidApi */;
+			targetProxy = AE5E4D292B11BE00000CC2A4 /* PBXContainerItemProxy */;
+		};
+		AE7128DC2B1ADA56000D570B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE5E4D1F2B11BD92000CC2A4 /* KeyboardKit */;
+			targetProxy = AE7128DB2B1ADA56000D570B /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		AE3545BD2AFF2495003BBFAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Macropad/Macropad.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Macropad/Preview Content\"";
+				DEVELOPMENT_TEAM = Q67427GU6K;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bialiauski.Macropad;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		AE3545BE2AFF2495003BBFAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Macropad/Macropad.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Macropad/Preview Content\"";
+				DEVELOPMENT_TEAM = Q67427GU6K;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bialiauski.Macropad;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
 		AE52A6022A95004500334C77 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -419,7 +730,10 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/hidapi/\"";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+				_EXPERIMENTAL_SWIFT_EXPLICIT_MODULES = YES;
 			};
 			name = Debug;
 		};
@@ -476,13 +790,15 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/hidapi/\"";
+				SWIFT_VERSION = 6.0;
+				_EXPERIMENTAL_SWIFT_EXPLICIT_MODULES = YES;
 			};
 			name = Release;
 		};
 		AE52A6052A95004500334C77 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = SKeyboard/SKeyboard.entitlements;
@@ -506,14 +822,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.bialiauski.SKeyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
 		AE52A6062A95004500334C77 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = SKeyboard/SKeyboard.entitlements;
@@ -537,7 +851,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.bialiauski.SKeyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -573,10 +886,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/hidapi/\"";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_STRICT_CONCURRENCY = complete;
-				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -614,9 +925,80 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_INCLUDE_PATHS = "\"$(SRCROOT)/hidapi/\"";
 				SWIFT_STRICT_CONCURRENCY = complete;
-				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AE5E4D242B11BD92000CC2A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = Q67427GU6K;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bialiauski.KeyboardKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_UPCOMING_FEATURE_INTERNAL_IMPORTS_BY_DEFAULT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AE5E4D252B11BD92000CC2A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = Q67427GU6K;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bialiauski.KeyboardKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_INTERNAL_IMPORTS_BY_DEFAULT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -625,6 +1007,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		AE3545BC2AFF2495003BBFAC /* Build configuration list for PBXNativeTarget "Macropad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE3545BD2AFF2495003BBFAC /* Debug */,
+				AE3545BE2AFF2495003BBFAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		AE52A5EE2A95004200334C77 /* Build configuration list for PBXProject "SKeyboard" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -648,6 +1039,15 @@
 			buildConfigurations = (
 				AE52A6382A95B70E00334C77 /* Debug */,
 				AE52A6392A95B70E00334C77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE5E4D262B11BD92000CC2A4 /* Build configuration list for PBXNativeTarget "KeyboardKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE5E4D242B11BD92000CC2A4 /* Debug */,
+				AE5E4D252B11BD92000CC2A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

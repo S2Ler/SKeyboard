@@ -13,6 +13,9 @@ struct SKeyboardApp: App {
         WindowGroup {
             ContentView()
               .environment(storage)
+              .task {
+                _ = k
+              }
         }
     }
 }
